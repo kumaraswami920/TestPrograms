@@ -1,0 +1,32 @@
+public class TestStringReverse {
+	public void reverseString(char[] s) {
+		int i = 0;
+		int j = s.length-1;
+		while (i < j) {
+		
+			char temp = s[i];
+			s[i] = s[j];
+			s[j] = temp;
+			
+			i ++;
+			j --;
+		}
+	}
+	
+
+    public static void main(String[] args)
+    {
+        char[] charArray1 = ["h","e","l","l","o"];
+        char[] charArray2 = ["H","a","n","n","a","h"];
+ 
+        System.out.println("Input string: " + charArray1);
+        str1 [] = reverseString(charArray1);
+		
+		System.out.println("Input string: " + charArray2);
+        str2 [] = reverseString(charArray2);
+      
+        System.out.println("Output string: " + str1);
+		System.out.println("Output string: " + str2);
+    }
+}
+ 
